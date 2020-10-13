@@ -11,6 +11,6 @@ from cadastrando_endereco import enderecos
 
 def listar_enderecos_cadastrados(enderecos):
     print('Endereços cadastrados')
-    return 
+    return enderecos
     
 listar_enderecos_cadastrados(enderecos)
