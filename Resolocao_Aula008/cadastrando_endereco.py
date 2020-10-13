@@ -8,7 +8,7 @@
 --- A função deve ser salva em um arquivo diferente do arquivo principal onde será chamada 
 """
 
-from cadastrando_pessoas import cadastros
+from cadastrando_pessoas import pessoas
 #=== escopo global
 enderecos = []
 
@@ -29,16 +29,3 @@ def cadastrar_enderecos(i_d, rua, numero, complemento, bairro, cidade, estado):
         else: 
             return 'Endereço realizado com sucesso'
 
-
-i_d = len(cadastros) + 1
-rua = input('Digite sua rua: ')
-numero = input('Digite seu numero: ')
-complemento = input('Digite o complemento: ')
-bairro = input('Digite o seu bairro: ')
-cidade = input('Digite a sua cidade: ')
-estado = input('Digite seu Estado: ')
-
-cadastrar_enderecos(i_d, rua, numero, complemento, bairro, cidade, estado)
-
-for endereco in enderecos:
-    print(enderecos)

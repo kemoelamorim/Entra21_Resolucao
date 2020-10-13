@@ -6,10 +6,10 @@
         a função deve retornar uma pessoa cadastrada na função do ex1 filtrando por id 
 """
 
-from cadastrando_pessoas import cadastros
+from cadastrando_pessoas import pessoas
 
-def listar_pessoas_cadastradas(cadastros):
+def listar_pessoas_cadastradas(pessoas):
     print('Quanditade de pessoas cadastradas')
-    return cadastros
+    return pessoas
     
-listar_pessoas_cadastradas(cadastros)
+listar_pessoas_cadastradas(pessoas)
