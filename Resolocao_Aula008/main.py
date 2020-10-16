@@ -10,7 +10,7 @@ idade = int(input("Digite sua idade: "))
 cadastro = cadastrar_pessoa(nome, sobrenome, idade)
 
 # Dados para o cadastro de Endereços
-i_d = len(cadastro)  # Passando o i_d da pessoa 
+i_d = (len(cadastro))# ((pessoa['i_d'])for pessoa in pessoas)
 rua = input('Digite sua rua: ')
 numero = input('Digite seu numero: ')
 complemento = input('Digite o complemento: ')
@@ -28,6 +28,7 @@ print(dictPessoas)
 buscaPessoa = int(input('Buscar pessoa por ID: '))
 pessoaEspecifia = pessoa_especifica(buscaPessoa)
 print(pessoaEspecifia)
+
 # Listar Endereços
 dictEnderecos = listar_enderecos_cadastrados(enderecos)
 print(dictEnderecos)
