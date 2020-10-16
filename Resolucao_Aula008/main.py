@@ -1,5 +1,6 @@
 from funcoes import cadastrar_pessoa,  listar_pessoas_cadastradas, pessoas, pessoa_especifica
 from funcoes import cadastrar_endereco, listar_enderecos_cadastrados, enderecos, endereco_especifico
+from file_controls import*
 
 # Dados para o cadastro de Pessoas
 print('Cadastrando pessoas')
@@ -37,3 +38,9 @@ print(dictEnderecos)
 buscaEndereco = int(input('Buscar endereço por ID: '))
 enderecoEspecifico = endereco_especifico(buscaEndereco)
 print(enderecoEspecifico)
+
+# manipulação de arquivos
+cria_newFile()
+criar_e_substituiFile()
+add_File()
+writeFile()
