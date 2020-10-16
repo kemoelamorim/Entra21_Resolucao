@@ -4,7 +4,7 @@ def cadastrar_pessoa(nome, sobrenome, idade):
     
     if idade < 18:
         print("Idade não permitida!")
-        
+    
     else:
         pessoa = {'nome': nome,'sobrenome': sobrenome,'idade': idade}
         pessoa['i_d'] = len(pessoas) + 1
