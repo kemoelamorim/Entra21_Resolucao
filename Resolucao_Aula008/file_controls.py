@@ -12,7 +12,7 @@ def criar_e_substituiFile():
     arquivo.write('Criou e subistituiu..')
     arquivo.close()
 
-#-- a = adiciona uma nova linha ao final do arquivo
+# a = adiciona uma nova linha ao final do arquivo
 def add_File():
     arquivo = open('Resolucao_Aula008/files/pessoa.txt','a')
     arquivo.write('Adicionou ao arquivo..')
