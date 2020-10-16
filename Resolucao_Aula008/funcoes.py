@@ -10,7 +10,7 @@ def cadastrar_pessoa(nome, sobrenome, idade):
         pessoa['i_d'] = len(pessoas) + 1
         pessoas.append(pessoa)
         print("Pessoa cadastrada!")
-        return pessoas
+        return pessoa
 
 # Exercício 2
 enderecos = []  

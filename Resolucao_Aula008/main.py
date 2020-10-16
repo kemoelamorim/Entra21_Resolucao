@@ -8,10 +8,10 @@ nome = input("Digite seu nome: ")
 sobrenome = input("Digite seu sobrenome: ")
 idade = int(input("Digite sua idade: "))
 
-cadastro = cadastrar_pessoa(nome, sobrenome, idade)
+pessoa = cadastrar_pessoa(nome, sobrenome, idade)
 
 # Dados para o cadastro de Endereços
-i_d = (len(cadastro))# ((pessoa['i_d'])for pessoa in pessoas)
+i_d = (len(pessoas))# ((pessoa['i_d'])for pessoa in pessoas)
 rua = input('Digite sua rua: ')
 numero = input('Digite seu numero: ')
 complemento = input('Digite o complemento: ')
@@ -40,7 +40,26 @@ enderecoEspecifico = endereco_especifico(buscaEndereco)
 print(enderecoEspecifico)
 
 # manipulação de arquivos
-cria_newFile()
-criar_e_substituiFile()
-add_File()
-writeFile()
+print(""" 
+O que deseja fazer com cadastros?
+1 - Primeiro cadastro 
+2 - Adicionando e Salvando
+3 - Salvar e Substituir
+4 - Ver cadastros salvos
+""")
+escolha_menu = input('Digite a opção Desejada?: ')
+
+if escolha_menu == '1':
+    status = cria_newFile(pessoa)
+    print(status)
+elif escolha_menu == '2':
+    status = add_File(pessoa)
+    print(status)
+elif escolha_menu == '3':        
+    status = criar_e_substituiFile(pessoa)
+    print(status)
+elif escolha_menu == '4':
+    status = writeFile(pessoa)
+    print(status)
+else:
+    print('tchau')
