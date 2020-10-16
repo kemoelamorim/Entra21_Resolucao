@@ -9,7 +9,7 @@ def cadastrar_pessoa(nome, sobrenome, idade):
         pessoa = {'nome': nome,'sobrenome': sobrenome,'idade': idade}
         pessoa['i_d'] = len(pessoas) + 1
         pessoas.append(pessoa)
-        print("Pessoa cadrastrada!")
+        print("Pessoa cadastrada!")
         return pessoas
 
 # Exercício 2
