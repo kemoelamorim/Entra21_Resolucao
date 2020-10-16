@@ -22,8 +22,9 @@ def add_File(pessoa):
     return 'Cadastro adicionado e salvo'
 
 # leitura de arquivo
-def writeFile(pessoa):
+def writeFile():
     arquivo = open('Resolucao_Aula008/files/pessoa.txt','r')
     for linha in arquivo:
-        return linha
-    arquivo.close()
+        linha_limpa = linha.strip()
+        lista_dados = linha_limpa.split(';')
+        return (f"nome:{lista_dados[0]} - sobrenome:{lista_dados[1]}, idade:{lista_dados[2]}, ID:{lista_dados[3]}")

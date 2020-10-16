@@ -46,6 +46,7 @@ O que deseja fazer com cadastros?
 2 - Adicionando e Salvando
 3 - Salvar e Substituir
 4 - Ver cadastros salvos
+5 - Sair sem Salvar
 """)
 escolha_menu = input('Digite a opção Desejada?: ')
 
@@ -59,7 +60,7 @@ elif escolha_menu == '3':
     status = criar_e_substituiFile(pessoa)
     print(status)
 elif escolha_menu == '4':
-    status = writeFile(pessoa)
+    status = writeFile()
     print(status)
 else:
-    print('tchau')
+    print('Até a próxima!')
